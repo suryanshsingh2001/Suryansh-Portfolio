@@ -615,6 +615,11 @@ section {
   bottom: 0;
 }
 
+.portfolio .portfolio-heading {
+  text-align: center;
+  color: #040b14;
+}
+
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
@@ -1121,4 +1126,9 @@ section {
   max-width: 100%;
   height: auto;
 }
+
+.facts-icons {
+  padding-left: 2%;
+}
+
   
