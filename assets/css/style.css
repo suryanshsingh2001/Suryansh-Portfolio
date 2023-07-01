@@ -5,21 +5,25 @@
 * License: https://bootstrapmade.com/license/
 */
 
+/* Primary shade color : #7344ff for headings 
+Seconday  shade color : #3500D3  for main theme*/ 
+/* Awesome background color   #040b14 */
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
+  color: #ececec;
+  background-color: #040b14;
 }
 
 a {
-  color: #149ddd;
+  color: #6d3cff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #37b3ed;
+  color: #240090;
   text-decoration: none;
 }
 
@@ -42,7 +46,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: #7344ff;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -56,7 +60,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2eafec;
+  background: #240090;
   color: #fff;
 }
 
@@ -121,7 +125,7 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: #7344ff;
   color: #fff;
   text-decoration: none;
 }
@@ -189,7 +193,7 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: #149ddd;
+  color: #7344ff;
 }
 
 /* Mobile Navigation */
@@ -202,7 +206,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #7344ff;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -265,10 +269,10 @@ h6 {
 }
 
 #hero p span {
-  color: #fff;
+  color:rgb(141, 103, 255);
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid rgb(115, 68, 255);
 }
 
 @media (min-width: 1024px) {
@@ -290,6 +294,42 @@ h6 {
   }
 }
 
+.hero-button {
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-button:hover {
+  background-color: #9b04ff;
+}
+
+.hero-button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: inherit;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.hero-button:hover:before {
+  opacity: 1;
+}
+.hero-button a {
+  color: #fff;
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -299,7 +339,8 @@ section {
 }
 
 .section-bg {
-  background: #f5f8fd;
+  background: rgb(27, 30, 31);
+
 }
 
 .section-title {
@@ -312,7 +353,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #7344ff;
 }
 
 .section-title h2::after {
@@ -321,7 +362,7 @@ section {
   display: block;
   width: 50px;
   height: 3px;
-  background: #149ddd;
+  background: #7344ff;
   bottom: 0;
   left: 0;
 }
@@ -331,12 +372,12 @@ section {
 }
 
 /*--------------------------------------------------------------
-# About
+# About Need to be redone
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #7344ff;
 }
 
 .about .content ul {
@@ -357,7 +398,7 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #3e00f8;
   line-height: 0;
 }
 
@@ -366,10 +407,11 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Facts
+# Facts Note: Need to be redone
 --------------------------------------------------------------*/
 .facts {
   padding-bottom: 30px;
+  background:rgb(30, 25, 47);
 }
 
 .facts .count-box {
@@ -380,7 +422,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: #7344ff;
   float: left;
   line-height: 0;
 }
@@ -417,7 +459,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Akills
+# Skills
 --------------------------------------------------------------*/
 .skills .progress {
   height: 60px;
@@ -433,7 +475,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #050d18;
+  color: #fff;
 }
 
 .skills .progress .skill .val {
@@ -450,7 +492,7 @@ section {
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: #149ddd;
+  background-color: #7344ff;
 }
 
 /*--------------------------------------------------------------
@@ -526,7 +568,7 @@ section {
   margin: 0 auto 35px auto;
   list-style: none;
   text-align: center;
-  background: #fff;
+  background: rgb(43, 45, 46);
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -539,14 +581,14 @@ section {
   font-weight: 600;
   line-height: 1;
   text-transform: uppercase;
-  color: #272829;
+  color: #fff;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #7344ff;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -589,17 +631,17 @@ section {
   color: #fff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.75);
+  background: rgba(8, 12, 14, 0.44);
   transition: 0.3s;
-  width: 50%;
+  width: 100%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: rgba(8, 12, 14, 0.679);
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #00000034;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -700,10 +742,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: #7344ff;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid #7344ff;
 }
 
 .services .icon i {
@@ -717,7 +759,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #149ddd;
+  color: #764eee;
 }
 
 .services .title {
@@ -728,11 +770,11 @@ section {
 }
 
 .services .title a {
-  color: #343a40;
+  color: #5d1dff;
 }
 
 .services .title a:hover {
-  color: #149ddd;
+  color: #7344ff;
 }
 
 .services .description {
@@ -838,18 +880,19 @@ section {
 --------------------------------------------------------------*/
 .contact {
   padding-bottom: 130px;
+  background: rgb(27, 30, 31);
 }
 
 .contact .info {
   padding: 30px;
-  background: #fff;
+  background:rgb(36, 39, 40);;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #7344ff;
   float: left;
   width: 44px;
   height: 44px;
@@ -866,7 +909,7 @@ section {
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
-  color: #050d18;
+  color: #ffffff;
 }
 
 .contact .info p {
@@ -900,14 +943,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: #7344ff;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: #7344ff;
   color: #fff;
 }
 
